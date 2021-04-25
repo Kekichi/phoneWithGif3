@@ -9,24 +9,27 @@ html, body {
  overflow: hidden;
  background-color: #222;
 }
-   
-.wrapper{
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
+
 #gif{
-  position:absolute;
+  position:fixed;
   z-index:1;
-  left:28.05%;
-  transform: translate(0,40%);
+  left:50%;
+  top:50%;
+  transform: translate(-50%,-60.9%) scale(0.7);
 }
-  </style>
+#iphone{
+  position: fixed;
+  left:50%;
+  top: 50%;
+  transform: translate(-50%,-50%) scale(0.7);
+}
+
+</style>
  </head>
  <body>
-  <img src="iphone.svg" width=40% style="position: absolute;left: 27%; z-index:0">
+  <div class="wrapper">
+  <img id="iphone" src="iphone.svg" width=40%>
   <img id="gif" src="final.gif" width=37.9%>
+  </div>
  </body>
 </html>
-
